@@ -10,5 +10,5 @@ jobs:
         uses: actions/setup-node@v4
       - run: node hello.js
       - run: npm install vitest
-      - run: npm run test
+      - run: sudo npm run test
       - run: echo "test ok"
