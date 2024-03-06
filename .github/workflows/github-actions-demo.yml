@@ -12,3 +12,4 @@ jobs:
       - run: npm install vitest
       - run: sudo npm run test
       - run: echo "test ok"
+      - run: python3 -m pip install semgrep
