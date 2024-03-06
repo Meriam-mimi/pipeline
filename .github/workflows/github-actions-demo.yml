@@ -4,12 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉"
       - uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v4
       - run: node hello.js
       - run: npm install vitest
-      - run: sudo npm run test
+      - run: ls -la
+      - run: npm run test
       - run: echo "test ok"
       - run: python3 -m pip install semgrep
+      - run: semgrep scan
