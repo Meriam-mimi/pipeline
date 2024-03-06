@@ -10,6 +10,6 @@ jobs:
       - run: ls -la
       - run: npm install node
       - run: node hello.js
-      - run: npm install -D vitest
+      - run: npm i vitest
       - run: npm run test
       
